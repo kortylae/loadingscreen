@@ -1,3 +1,5 @@
+fx_version 'cerulean'
+game 'gta5'
 description 'LoadingScreen Created by kortylae.pl'
 
 files {
