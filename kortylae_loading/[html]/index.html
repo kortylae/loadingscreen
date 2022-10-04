@@ -1,0 +1,68 @@
+<!---- CREATED BY kortylae.pl --->
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>LoadingScreen</title>
+        <!--ODNOŚNIK CSS-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<!---- CREATED BY kortylae.pl --->
+    <body>
+        <div class="video"> 
+            <iframe width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/Wqsg2vWHZBM?&controls=0&rel=0&showinfo=0&autoplay=1&loop=1&start=1&mute=1" frameborder="0" allow="autoplay; fullscreen" ></iframe>
+        </div>
+        <!--TEKST POWITANIE-->
+        <div class="ayo">Witaj na <purple>Server Name</purple><br>
+        <ek>Życzymy miłej rozgrywki!</ek>
+    </div>
+    <!--TEKST ŁĄCZENIE-->
+        <div class="ekortyla">
+            Trwa Łączenie Z Serwerem<br>
+            <music>Aby wyłączyć muzykę kliknij spacje!</music><br>
+            <div class="przyciemnienie"></div>
+        </div>
+        <!--ANIMACJA ŁADOWANIA-->
+        <div class="loading">
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+        </div>
+<!---- CREATED BY kortylae.pl --->
+
+        <!--MUZYKA-->
+        <audio id="eryczek" src="ek.mp3" autoplay="true" hidden="true" loop="true"></audio>
+    </body>
+    <!--SKRYPT AUDIO-->
+    <script>
+    
+        var play = eryczek;
+        var myAudio = document.getElementById("eryczek");
+        
+        myAudio.volume = 0.1;
+    
+        function onKeyDown(event) {
+                switch (event.keyCode) {
+                    case 32: //SpaceBar                    
+                        if (play) {
+                            myAudio.pause();
+                            play = false;
+                        } else {
+                            myAudio.play();
+                            play = true;
+                        }
+                        break;
+                }
+          return false;
+        }
+    
+        window.addEventListener("keydown", onKeyDown, false);
+    </script>
+<!---- CREATED BY kortylae.pl --->
+</html>
+<!---- CREATED BY kortylae.pl --->

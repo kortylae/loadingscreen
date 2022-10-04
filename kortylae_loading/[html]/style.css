@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body img {
+            position: absolute;
+            left: 46%;
+            transform: translateX(-50%);
+            background-size: 50%;
+            width: 150px;
+            margin: 380px auto;
+          }
+        .video {
+            position: absolute;
+            width: 125%;
+            height: 130%;
+            top: -15%;
+            left: -10%;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: -99;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%; 
+        }
+
+        .ekortyla {
+            color: #ffffff;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 450;
+            text-shadow: 10px 10px 10px black;
+            margin: 880px auto;
+        }
+        .ekortyla music{
+            font-size: 12px;
+            font-weight: 450;
+            text-shadow: 10px 10px 10px black;
+        }
+        .ayo{
+                color: #ffffff;
+                font-family: 'Raleway', sans-serif;
+                font-size: 13px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 500;
+                text-shadow: 15px 15px 15px 15px black;
+                margin: 10px auto;
+                margin-left: 0.1%;
+            }
+        .ayo purple{
+            color: #00c6ff;
+            font-weight: 800;
+            text-shadow: 15px 15px 15px 15px black;
+        }
+        .ayo ek{
+            font-size: 10px;
+            font-weight: 450;
+            text-shadow: 15px 15px 15px 15px black;
+        }
+        .ekortyla .przyciemnienie {
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.767);
+            position: absolute;
+            width: 15000px;
+            height: 15000px;
+            margin-left: -150px;
+            margin-top: -1500px;
+        }
+        
+
+        .loading{
+            position: absolute;
+            top: 82%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .obj{
+            width: 5px;
+            height: 30px;
+            background: white;
+            margin: 0 3px;
+            border-radius: 8px;
+            animation: loading 0.9s infinite;
+        }
+
+        .obj:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        .obj:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        .obj:nth-child(4){
+             animation-delay: 0.3s;
+        }
+        .obj:nth-child(5){
+            animation-delay: 0.4s;
+        }
+        .obj:nth-child(6){
+             animation-delay: 0.5s;
+        }
+        .obj:nth-child(7){
+            animation-delay: 0.6s;
+        }
+        .obj:nth-child(8){
+            animation-delay: 0.7s;
+        }
+        .obj:nth-child(9){
+            animation-delay: 0.8s;
+        }
+
+        @keyframes loading {
+        0%{
+            height: 0;
+        }
+        50%{
+            height: 20px;
+        }
+        100%{
+            height: 0;
+        }}
